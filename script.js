@@ -3,7 +3,15 @@ var y1,y2,y3,y
 var z1,z2,z3,z
 var d1,d2,d3,d
 var X,Y,Z,i,max=8;
-
+window.onload=(function()
+{
+	var show;
+	var boxes=document.getElementsByClassName("defaultTextBox");
+	for (var i = boxes.length - 1; i >= 0; i--) {
+		boxes[i].style.width=window.innerWidth/10+"px";
+	}
+}
+);
 function setv()
 {
   max=prompt("Enter number of iterations:");
