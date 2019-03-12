@@ -1,41 +1,59 @@
-<!DOCTYPE html>
-<html>
-<head>
-	  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Gauss-Jacobi</title>
 
-	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="style.css"class="defaultTextBox">
-	<script type="text/javascript" src="script.js"></script>
-</head>
-
-
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Deb Shashwat">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Rent It</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
-<body>
-<div class="container" id="form">
-<form style="font-family: helvetica;top: 35px; left: 45px;">
-	x1=<input class="defaultTextBox"id="x1" type="text" size="3"> y1=<input class="defaultTextBox"type="text" id="y1" size="3"> z1= <input class="defaultTextBox" type="text" id="z1" size="3"> d1=<input class="defaultTextBox" type="text" id="d1"name="" size="3">
-	<br><br>
-	x2=<input class="defaultTextBox"id="x2" type="text" size="3"> y2=<input class="defaultTextBox" type="text" id="y2" size="3"> z2= <input class="defaultTextBox"type="text" id="z2" size="3"> d2=<input class="defaultTextBox"type="text" id="d2"name="" size="3">
-	<br><br>
-	x3=<input class="defaultTextBox"id="x3" type="text" size="3"> y3=<input class="defaultTextBox"type="text" id="y3" size="3"> z3= <input class="defaultTextBox"type="text" id="z3" size="3"> d3=<input class="defaultTextBox"type="text" id="d3"name="" size="3">
-	<br><br>
-	
-	
-	<input type="button" class="btn btn-info btn-lg" id="calc" onclick="getvalue()" value="Calculate" >
-    <input style="margin-left: 12px" type="button" class="btn btn-info btn-lg" id="set" onclick="setv()" value="Set Iterations" >
-</form>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+  </head>
+  <body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto">
+    <div class="inner">
+      <img src="rent.png" alt="rent it">
+      <nav class="nav nav-masthead justify-content-center">
+        <a class="nav-link active" href="#">Home</a>
+        <a class="nav-link" href="signup.html">SignUp</a>
+        <a class="nav-link" href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main role="main" class="inner cover">
+    <h1 class="cover-heading">Rent almost anything!</h1>
+    <p class="lead">Get anything you want without having to buy</p>
+    <p class="lead">
+      <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+    </p>
+  </main>
+
+  <footer class="mastfoot mt-auto">
+
+  </footer>
 </div>
-<br><br>
-<div class=" container alert alert-success">
-  Enter coefficients of the equations in the corresponding boxes.
-</div>
-<div class="container alert alert-info">
-  <strong><a href="#set">Set Iterations</a></strong> to set the numbr of iterations.
-</div>
-
-<div id="display" class="container"> </div>
 </body>
 </html>
